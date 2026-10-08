@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ======================= SEO Primary Meta Tags ======================= -->
+  <title>د. جلال حسان | عيادة الدكتور جلال للاستشارات الطبية المباشرة</title>
+  <meta name="title" content="د. جلال حسان | عيادة الدكتور جلال للاستشارات الطبية المباشرة">
+  <meta name="description" content="عيادة د. جلال حسان (دكتور جلال) - طبيب عام وجراحة، باطنية وأطفال. تقديم استشارات طبية سريرية، استقبال الحالات الطارئة، ومتابعة الأمراض المزمنة.">
+  <meta name="keywords" content="الدكتور جلال, دكتور جلال, عيادة الدكتور جلال, د. جلال حسان, استشارات طبية, طبيب باطنية, طبيب أطفال, اليمن, حجز موعد دكتور">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Arabic">
+  <meta name="author" content="د. جلال حسان">
+
+  <!-- ======================= Open Graph / Social Media Meta Tags ======================= -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.dr-jalal.com/"> <!-- استبدله برابط موقعك الحقيقي عند رفعه -->
+  <meta property="og:title" content="د. جلال حسان | عيادة الدكتور جلال">
+  <meta property="og:description" content="احجز استشارتك الطبية المباشرة مع الدكتور جلال حسان. متابعة أمراض مزمنة واستقبال حالات طارئة.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Dr.+Jalal+Hassan"> <!-- ضع رابط صورة الطبيب أو الشعار -->
+
+  <!-- Google Site Verification -->
+  <meta name="google-site-verification" content="WtoP6iEMbyaUiefifVBXwXmBrtxvfSvmWWauHSZW_TU" />
+
+  <!-- Schema.org Structured Data (مهم جداً للظهور كعيادة وطبيب في جوجل) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "د. جلال حسان (عيادة الدكتور جلال)",
+    "image": "https://via.placeholder.com/1200x630.png?text=Dr.+Jalal+Hassan",
+    "telephone": "+967783817001",
+    "medicalSpecialty": [
+      "GeneralPractice",
+      "Pediatric",
+      "InternalMedicine"
+    ],
+    "priceRange": "$$",
+    "description": "استشارات طبية ورعاية سريرية مباشرة تحت إشراف د. جلال حسان",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "YE"
+    }
+  }
+  </script>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --apple-blur: 40px;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Tajawal', sans-serif;
+      letter-spacing: -0.015em;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    .apple-glass {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(var(--apple-blur)) saturate(190%);
+      -webkit-backdrop-filter: blur(var(--apple-blur)) saturate(190%);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    }
+
+    .apple-glass-card {
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(30px) saturate(180%);
+      -webkit-backdrop-filter: blur(30px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      box-shadow: 0 15px 35px -10px rgba(15, 23, 42, 0.04), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+    }
+
+    .apple-input-cell {
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .dark .apple-glass {
+      background: rgba(24, 24, 27, 0.75);
+      backdrop-filter: blur(var(--apple-blur)) saturate(190%);
+      -webkit-backdrop-filter: blur(var(--apple-blur)) saturate(190%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+    }
+
+    .dark .apple-glass-card {
+      background: rgba(30, 30, 36, 0.65);
+      backdrop-filter: blur(30px) saturate(180%);
+      -webkit-backdrop-filter: blur(30px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.4), 0 1px 0 0 rgba(255, 255, 255, 0.08) inset;
+    }
+
+    .dark .apple-input-cell {
+      background: rgba(30, 30, 36, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .apple-input-cell:focus-within {
+      background: rgba(255, 255, 255, 0.95);
+      border-color: #0071e3;
+      box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.12);
+    }
+
+    .dark .apple-input-cell:focus-within {
+      background: rgba(39, 39, 46, 0.95);
+      border-color: #0A84FF;
+      box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.2);
+    }
+
+    .apple-btn-primary {
+      background: linear-gradient(180deg, #0077ED 0%, #0062C4 100%);
+      box-shadow: 0 10px 25px -5px rgba(0, 113, 227, 0.35), 0 1px 1px 0 rgba(255, 255, 255, 0.4) inset;
+    }
+
+    .tab-active {
+      background: #0071E3 !important;
+      color: #FFFFFF !important;
+      box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3);
+    }
+
+    @keyframes ambientShift {
+      0%, 100% { transform: translate(0px, 0px) scale(1); }
+      33% { transform: translate(30px, -40px) scale(1.08); }
+      66% { transform: translate(-25px, 20px) scale(0.96); }
+    }
+    .ambient-glow-1 { animation: ambientShift 18s ease-in-out infinite; }
+    .ambient-glow-2 { animation: ambientShift 22s ease-in-out infinite reverse; }
+  </style>
+
+  <script>
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+</head>
+<body class="bg-[#F5F5F7] dark:bg-[#0E0E10] min-h-screen relative overflow-x-hidden text-[#1D1D1F] dark:text-[#F5F5F7] antialiased selection:bg-[#0071E3] selection:text-white">
+
+  <!-- إضاءات الإشعاع المحيطي -->
+  <div class="fixed -top-40 -right-20 w-[550px] h-[550px] bg-gradient-to-br from-[#E0F2FE] dark:from-[#003B73]/30 via-[#BAE6FD] dark:via-[#002244]/20 to-transparent rounded-full blur-[140px] pointer-events-none ambient-glow-1 opacity-70 dark:opacity-40"></div>
+  <div class="fixed top-1/2 -left-40 w-[600px] h-[600px] bg-gradient-to-tr from-[#CFFAFE] dark:from-[#042f2e]/30 via-[#E2E8F0] dark:via-[#1e1b4b]/20 to-transparent rounded-full blur-[160px] pointer-events-none ambient-glow-2 opacity-60 dark:opacity-30"></div>
+  <div class="fixed -bottom-40 right-1/3 w-[500px] h-[500px] bg-gradient-to-t from-[#D1FAE5]/50 dark:from-[#064e3b]/20 to-transparent rounded-full blur-[150px] pointer-events-none opacity-50 dark:opacity-30"></div>
+
+  <!-- الشريط العلوي بنمط Dynamic Floating Island -->
+  <header class="sticky top-5 z-40 px-4 max-w-5xl mx-auto">
+    <nav class="apple-glass rounded-full px-3 sm:px-6 py-2.5 flex justify-between items-center transition-all duration-300 gap-2">
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-b from-[#1D1D1F] to-[#3A3A3C] text-white flex items-center justify-center text-lg shadow-md shadow-black/10 shrink-0">
+          <i class="fa-solid fa-stethoscope text-sm"></i>
+        </div>
+        <div>
+          <span class="font-bold text-sm sm:text-base text-[#1D1D1F] dark:text-white block leading-none">د. جلال حسان</span>
+          <span class="text-[11px] text-[#86868B] dark:text-[#A1A1A6] font-medium hidden sm:inline-block">
+            طبيب عام وجراحة • باطنية • أطفال
+          </span>
+        </div>
+      </div>
+
+      <div class="flex items-center bg-black/[0.04] dark:bg-white/[0.08] p-1 rounded-full border border-black/5 dark:border-white/10">
+        <button id="tabBtnHome" onclick="switchTab('home')" class="tab-active text-xs sm:text-sm font-semibold py-1.5 px-3 sm:px-4 rounded-full transition-all duration-200 flex items-center gap-1.5 cursor-pointer">
+          <i class="fa-solid fa-house-chimney-medical text-xs"></i>
+          <span>الرئيسية</span>
+        </button>
+        <button id="tabBtnResume" onclick="switchTab('resume')" class="text-[#1D1D1F] dark:text-gray-300 hover:text-[#0071E3] dark:hover:text-[#0A84FF] text-xs sm:text-sm font-semibold py-1.5 px-3 sm:px-4 rounded-full transition-all duration-200 flex items-center gap-1.5 cursor-pointer">
+          <i class="fa-solid fa-id-card-clip text-xs"></i>
+          <span>السيرة الذاتية</span>
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <button id="themeToggleBtn" onclick="toggleTheme()" aria-label="تبديل المظهر" class="w-9 h-9 rounded-full bg-white/70 dark:bg-white/10 border border-black/5 dark:border-white/10 text-[#1D1D1F] dark:text-yellow-400 flex items-center justify-center transition-all hover:scale-105 active:scale-95 shadow-sm cursor-pointer">
+          <i id="themeIcon" class="fa-solid fa-moon text-sm"></i>
+        </button>
+
+        <a href="tel:+967783817001" dir="ltr" class="hidden md:inline-flex items-center gap-2 text-xs font-semibold text-[#1D1D1F] dark:text-white bg-white/60 dark:bg-white/10 hover:bg-white/90 dark:hover:bg-white/20 border border-black/5 dark:border-white/10 py-2 px-3 rounded-full transition shadow-sm">
+          <i class="fa-solid fa-phone text-[#0071E3] dark:text-[#0A84FF] text-[11px]"></i>
+          <span>+967 783 817 001</span>
+        </a>
+
+        <button onclick="goToBooking()" class="hidden sm:flex apple-btn-primary text-xs font-semibold text-white py-2 px-3.5 rounded-full transition transform active:scale-95 items-center gap-1 cursor-pointer">
+          <span>حجز موعد</span>
+          <i class="fa-solid fa-arrow-left text-[9px]"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======================= الصفحة الرئيسية ======================= -->
+  <main id="homeView" class="transition-opacity duration-300">
+    <section class="max-w-4xl mx-auto px-4 pt-14 md:pt-20 pb-12 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full apple-glass-card border border-white/80 dark:border-white/10 text-[#0071E3] dark:text-[#38BDF8] text-xs font-semibold mb-6 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-[#34C759] shadow-[0_0_8px_#34C759]"></span>
+        منظومة استشارات سريرية ورعاية طبية مباشرة
+      </div>
+      
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#1D1D1F] dark:text-white tracking-tight leading-[1.25] mb-5">
+        عيادة الدكتور جلال حسان ، <br>
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#0071E3] via-[#0284C7] to-[#0D9488] dark:from-[#38BDF8] dark:via-[#60A5FA] dark:to-[#2DD4BF]">رعايتك الصحية بأعلى درجات الدقة.</span>
+      </h1>
+      
+      <div class="flex flex-wrap items-center justify-center gap-2 max-w-2xl mx-auto mb-6">
+        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white/70 dark:bg-white/10 border border-black/5 dark:border-white/10 text-[#1D1D1F] dark:text-gray-200 shadow-sm">
+          <i class="fa-solid fa-user-doctor text-[#0071E3] dark:text-[#38BDF8] ml-1"></i> الاستشارات الطبية
+        </span>
+        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-red-50/80 dark:bg-red-950/40 border border-red-200 dark:border-red-900/50 text-red-700 dark:text-red-400 shadow-sm">
+          <i class="fa-solid fa-truck-medical ml-1 text-red-500"></i> استقبال الحالات الطارئة أونلاين
+        </span>
+        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/50 text-emerald-800 dark:text-emerald-400 shadow-sm">
+          <i class="fa-solid fa-heart-pulse ml-1 text-emerald-600"></i> متابعة الأمراض المزمنة
+        </span>
+        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-sky-50/80 dark:bg-sky-950/40 border border-sky-200 dark:border-sky-900/50 text-sky-800 dark:text-sky-300 shadow-sm">
+          <i class="fa-solid fa-file-medical ml-1 text-sky-600"></i> كتابة التقارير الطبية للمرضى
+        </span>
+      </div>
+
+      <p class="text-[#86868B] dark:text-[#A1A1A6] text-base md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+        تجربة طبية متكاملة في <strong class="text-[#1D1D1F] dark:text-white font-semibold">عيادة الدكتور جلال</strong>. فحص التشخيصات السريرية، واستشارات عاجلة، ومتابعة العلاج بدقة وسرية تامة.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="#booking" class="apple-btn-primary hover:opacity-95 text-white font-semibold text-sm sm:text-base py-3.5 px-8 rounded-full transition-all transform active:scale-95 flex items-center gap-2 shadow-lg shadow-blue-500/25">
+          <i class="fa-solid fa-calendar-check text-sm"></i>
+          <span>طلب استشارة الآن</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- بطاقات الخدمات -->
+    <section id="services" class="max-w-5xl mx-auto px-4 py-10 relative z-10">
+      <div class="flex flex-col items-center mb-10 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1D1D1F] dark:text-white tracking-tight">الخدمات الطبية</h2>
+        <p class="text-[#86868B] dark:text-[#A1A1A6] text-sm mt-1">توجيه متخصص بحسب الاحتياج الدقيق لحالتك الصحية</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="apple-glass-card p-7 rounded-[2rem] hover:shadow-xl hover:shadow-black/[0.03] transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#0071E3]/10 dark:bg-[#0071E3]/20 text-[#0071E3] dark:text-[#38BDF8] flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#1D1D1F] dark:text-white mb-2">استقبال الحالات الطارئة أونلاين</h3>
+            <p class="text-[#86868B] dark:text-[#A1A1A6] text-sm leading-relaxed mb-6">
+              تقييم فوري وتوجيه أولي عاجل لكيفية التعامل السريع مع الأعراض المفاجئة والحرجة خطوة بخطوة.
+            </p>
+          </div>
+          <div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-red-600 dark:text-red-400 bg-red-500/10 dark:bg-red-500/20 px-3 py-1.5 rounded-full">
+              <i class="fa-solid fa-bolt text-[10px]"></i> استجابة سريعة
+            </span>
+          </div>
+        </div>
+
+        <div class="apple-glass-card p-7 rounded-[2rem] hover:shadow-xl hover:shadow-black/[0.03] transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#34C759]/15 dark:bg-[#34C759]/20 text-[#34C759] flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#1D1D1F] dark:text-white mb-2">متابعة الأمراض المزمنة</h3>
+            <p class="text-[#86868B] dark:text-[#A1A1A6] text-sm leading-relaxed mb-6">
+              متابعة دورية لحالات الضغط والسكري، تقييم الفحوصات بانتظام وضبط الجرعات لمنع أي مضاعفات.
+            </p>
+          </div>
+          <div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#248A3D] dark:text-[#34C759] bg-[#34C759]/15 dark:bg-[#34C759]/20 px-3 py-1.5 rounded-full">
+              <i class="fa-solid fa-shield-halved text-[10px]"></i> رعاية مستمرة
+            </span>
+          </div>
+        </div>
+
+        <div class="apple-glass-card p-7 rounded-[2rem] hover:shadow-xl hover:shadow-black/[0.03] transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#5856D6]/10 dark:bg-[#5856D6]/20 text-[#5856D6] dark:text-[#A78BFA] flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-file-medical"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#1D1D1F] dark:text-white mb-2">كتابة التقارير الطبية للمرضى</h3>
+            <p class="text-[#86868B] dark:text-[#A1A1A6] text-sm leading-relaxed mb-6">
+              إعداد وتلخيص التقارير الطبية، وشرح ملف المريض، وقراءة الفحوصات والتحاليل والأشعة بصيغة معتمدة.
+            </p>
+          </div>
+          <div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#5856D6] dark:text-[#A78BFA] bg-[#5856D6]/10 dark:bg-[#5856D6]/20 px-3 py-1.5 rounded-full">
+              <i class="fa-solid fa-file-lines text-[10px]"></i> تقارير معتمدة
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= معرض الصور والعيادة ======================= -->
+    <section id="gallery" class="max-w-5xl mx-auto px-4 py-10 relative z-10">
+      <div class="flex flex-col items-center mb-8 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1D1D1F] dark:text-white tracking-tight">معرض الصور والعيادة</h2>
+        <p class="text-[#86868B] dark:text-[#A1A1A6] text-sm mt-1">نظرة عامة على العيادة والتجهيزات والشهادات الطبية</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <!-- صورة 1 -->
+        <div class="apple-glass-card p-2.5 rounded-3xl overflow-hidden hover:scale-[1.02] transition-transform duration-300 shadow-sm">
+          <img src="https://via.placeholder.com/600x400.png?text=%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9+%D8%AF.+%D8%AC%D9%84%D8%A7%D9%84+%D8%AD%D8%B3%D8%A7%D9%86" alt="عيادة الدكتور جلال حسان" class="w-full h-48 object-cover rounded-2xl">
+          <p class="text-xs font-semibold text-center py-2.5 text-[#1D1D1F] dark:text-gray-200">مقر العيادة والاستقبال</p>
+        </div>
+        <!-- صورة 2 -->
+        <div class="apple-glass-card p-2.5 rounded-3xl overflow-hidden hover:scale-[1.02] transition-transform duration-300 shadow-sm">
+          <img src="https://via.placeholder.com/600x400.png?text=%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B7%D8%A8%D9%8A%D8%A9" alt="دكتور جلال حسان استشارات طبية" class="w-full h-48 object-cover rounded-2xl">
+          <p class="text-xs font-semibold text-center py-2.5 text-[#1D1D1F] dark:text-gray-200">التجهيزات والأجهزة الطبية</p>
+        </div>
+        <!-- صورة 3 -->
+        <div class="apple-glass-card p-2.5 rounded-3xl overflow-hidden hover:scale-[1.02] transition-transform duration-300 shadow-sm">
+          <img src="https://via.placeholder.com/600x400.png?text=%D8%A7%D9%84%D8%B4%D9%87%D8%A7%D8%AF%D8%A7%D8%AA+%D9%88%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%AA" alt="الشهادات والاعتمادات د جلال" class="w-full h-48 object-cover rounded-2xl">
+          <p class="text-xs font-semibold text-center py-2.5 text-[#1D1D1F] dark:text-gray-200">الشهادات والاعتمادات الطبية</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- نموذج طلب الاستشارة -->
+    <section id="booking" class="max-w-2xl mx-auto px-4 py-12 relative z-10">
+      <div class="apple-glass p-6 sm:p-10 rounded-[2.5rem] shadow-2xl shadow-black/[0.04]">
+        <div class="text-center mb-8">
+          <span class="text-[11px] font-bold tracking-widest text-[#86868B] dark:text-[#A1A1A6] uppercase">Service Request</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] dark:text-white mt-1">طلب استشارة في عيادة الدكتور جلال</h2>
+          <p class="text-[#86868B] dark:text-[#A1A1A6] text-xs sm:text-sm mt-1">يتم تحويل البيانات المعبأة مباشرة إلى شات الطبيب الخاص عبر واتساب</p>
+        </div>
+
+        <form id="consultationForm" onsubmit="sendToWhatsApp(event)" class="space-y-3.5">
+          <div class="apple-input-cell rounded-2xl p-3.5 px-4">
+            <label class="block text-[11px] font-bold text-[#86868B] dark:text-[#A1A1A6] mb-1" for="patientName">
+              اسم المريض الكامل
+            </label>
+            <input type="text" id="patientName" required placeholder="مثال: أحمد محمد علي" 
+              class="w-full bg-transparent outline-none text-[#1D1D1F] dark:text-white font-medium text-sm placeholder-[#86868B]/40">
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="apple-input-cell rounded-2xl p-3.5 px-4">
+              <label class="block text-[11px] font-bold text-[#86868B] dark:text-[#A1A1A6] mb-1" for="patientAge">
+                العمر
+              </label>
+              <input type="number" id="patientAge" required placeholder="مثال: 32" min="1" max="120"
+                class="w-full bg-transparent outline-none text-[#1D1D1F] dark:text-white font-medium text-sm placeholder-[#86868B]/40">
+            </div>
+            
+            <div class="apple-input-cell rounded-2xl p-3.5 px-4">
+              <label class="block text-[11px] font-bold text-[#86868B] dark:text-[#A1A1A6] mb-1" for="patientGender">
+                الجنس (النوع)
+              </label>
+              <div class="relative">
+                <select id="patientGender" required 
+                  class="w-full bg-transparent outline-none text-sm font-medium text-[#1D1D1F] dark:text-white appearance-none cursor-pointer pr-1 py-0.5">
+                  <option value="" disabled selected class="text-gray-400 dark:bg-[#1E1E24]">اختر الجنس...</option>
+                  <option value="ذكر" class="text-[#1D1D1F] dark:bg-[#1E1E24] dark:text-white">ذكر</option>
+                  <option value="أنثى" class="text-[#1D1D1F] dark:bg-[#1E1E24] dark:text-white">أنثى</option>
+                </select>
+                <i class="fa-solid fa-chevron-down text-xs text-[#86868B] absolute left-1 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="apple-input-cell rounded-2xl p-3.5 px-4 transition-all duration-300">
+            <label class="block text-[11px] font-bold text-[#86868B] dark:text-[#A1A1A6] mb-1">
+              نوع الاستشارة المطلوبة
+            </label>
+            
+            <button type="button" id="dropdownBtn" onclick="toggleDropdown()" 
+              class="w-full flex items-center justify-between text-right text-sm font-medium text-[#1D1D1F] dark:text-white py-0.5 outline-none cursor-pointer">
+              <span id="selectedServiceText" class="text-[#86868B]/50 dark:text-gray-400 font-normal">اختر الخدمة المطلوبة...</span>
+              <i id="dropdownArrow" class="fa-solid fa-chevron-down text-xs text-[#86868B] transition-transform duration-300"></i>
+            </button>
+
+            <input type="hidden" id="serviceType" name="serviceType" required>
+
+            <div id="inlineDropdown" class="hidden overflow-hidden transition-all duration-300 mt-2.5 pt-2 border-t border-black/5 dark:border-white/10 divide-y divide-black/[0.04] dark:divide-white/[0.06]">
+              <div onclick="selectService('استقبال حالة طارئة أونلاين')" class="service-item py-2.5 px-3 rounded-xl flex items-center justify-between text-sm cursor-pointer hover:bg-black/5 dark:hover:bg-white/5 transition text-[#1D1D1F] dark:text-gray-200">
+                <span>استقبال حالة طارئة أونلاين</span>
+                <i class="fa-solid fa-check text-[#0071E3] dark:text-[#38BDF8] hidden check-icon text-xs"></i>
+              </div>
+              <div onclick="selectService('متابعة الأمراض المزمنة')" class="service-item py-2.5 px-3 rounded-xl flex items-center justify-between text-sm cursor-pointer hover:bg-black/5 dark:hover:bg-white/5 transition text-[#1D1D1F] dark:text-gray-200">
+                <span>متابعة الأمراض المزمنة</span>
+                <i class="fa-solid fa-check text-[#0071E3] dark:text-[#38BDF8] hidden check-icon text-xs"></i>
+              </div>
+              <div onclick="selectService('كتابة تقرير طبي للمريض')" class="service-item py-2.5 px-3 rounded-xl flex items-center justify-between text-sm cursor-pointer hover:bg-black/5 dark:hover:bg-white/5 transition text-[#1D1D1F] dark:text-gray-200">
+                <span>كتابة تقرير طبي للمريض</span>
+                <i class="fa-solid fa-check text-[#0071E3] dark:text-[#38BDF8] hidden check-icon text-xs"></i>
+              </div>
+              <div onclick="selectService('استشارة طبية عامة وتشخيص')" class="service-item py-2.5 px-3 rounded-xl flex items-center justify-between text-sm cursor-pointer hover:bg-black/5 dark:hover:bg-white/5 transition text-[#1D1D1F] dark:text-gray-200">
+                <span>استشارة طبية عامة وتشخيص</span>
+                <i class="fa-solid fa-check text-[#0071E3] dark:text-[#38BDF8] hidden check-icon text-xs"></i>
+              </div>
+              <div onclick="selectService('استفسار طبي آخر')" class="service-item py-2.5 px-3 rounded-xl flex items-center justify-between text-sm cursor-pointer hover:bg-black/5 dark:hover:bg-white/5 transition text-[#1D1D1F] dark:text-gray-200">
+                <span>استفسار طبي آخر</span>
+                <i class="fa-solid fa-check text-[#0071E3] dark:text-[#38BDF8] hidden check-icon text-xs"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="apple-input-cell rounded-2xl p-3.5 px-4">
+            <label class="block text-[11px] font-bold text-[#86868B] dark:text-[#A1A1A6] mb-1" for="patientNotes">
+              تفاصيل الأعراض أو الشكوى
+            </label>
+            <textarea id="patientNotes" rows="3" required placeholder="اكتب وصفاً موجزاً للأعراض وتاريخ بدايتها..." 
+              class="w-full bg-transparent outline-none text-[#1D1D1F] dark:text-white font-medium text-sm placeholder-[#86868B]/40 leading-relaxed"></textarea>
+          </div>
+
+          <div class="pt-3">
+            <button type="submit" class="w-full py-4 px-6 rounded-2xl apple-btn-primary hover:opacity-95 text-white font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 transition transform active:scale-[0.98] cursor-pointer">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>إرسال الاستشارة إلى واتساب</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= تبويب السيرة الذاتية ======================= -->
+  <section id="resumeView" class="hidden transition-opacity duration-300 max-w-4xl mx-auto px-4 pt-10 pb-16 relative z-10">
+    <div class="apple-glass p-8 sm:p-10 rounded-[2.5rem] mb-8 text-center relative overflow-hidden">
+      <div class="w-20 h-20 rounded-3xl bg-gradient-to-tr from-[#0071E3] to-[#0D9488] text-white flex items-center justify-center text-3xl mx-auto mb-5 shadow-xl shadow-[#0071E3]/20">
+        <i class="fa-solid fa-user-doctor"></i>
+      </div>
+      <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#0071E3]/10 dark:bg-[#0071E3]/20 text-[#0071E3] dark:text-[#38BDF8] text-xs font-bold mb-3">
+        السيرة الذاتية والمسار المهني
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1D1D1F] dark:text-white tracking-tight mb-2">د. جلال حسان</h2>
+      <p class="text-base sm:text-lg text-[#0071E3] dark:text-[#38BDF8] font-semibold mb-4">
+        طبيب عام وجراحة (باطنية — أطفال)
+      </p>
+      
+      <div class="inline-flex flex-wrap items-center justify-center gap-3 mt-1">
+        <span class="px-4 py-2 rounded-2xl bg-white/70 dark:bg-white/10 border border-black/5 dark:border-white/10 text-xs sm:text-sm font-bold text-[#1D1D1F] dark:text-gray-200 shadow-sm flex items-center gap-2">
+          <i class="fa-solid fa-award text-amber-500"></i>
+          خبرة سريرية لأكثر من 4 سنوات في ممارسة المهنة
+        </span>
+        <span class="px-4 py-2 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/50 text-xs sm:text-sm font-bold text-emerald-800 dark:text-emerald-400 shadow-sm flex items-center gap-2">
+          <i class="fa-solid fa-shield-halved text-emerald-600"></i>
+          خصوصيتكم أمانة في أعناقنا
+        </span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+      <div class="apple-glass-card p-6 rounded-[2rem]">
+        <div class="w-11 h-11 rounded-2xl bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400 flex items-center justify-center text-lg mb-4">
+          <i class="fa-solid fa-truck-medical"></i>
+        </div>
+        <h3 class="text-base font-bold text-[#1D1D1F] dark:text-white mb-1.5">طب الطوارئ والحوادث</h3>
+        <p class="text-xs sm:text-sm text-[#86868B] dark:text-[#A1A1A6] leading-relaxed">
+          ممارس لطب الطوارئ والإصابات الحرجة، وتحديد الأولويات السريرية والتدخل الإسعافي لإنقاذ الحالات المعقدة.
+        </p>
+      </div>
+
+      <div class="apple-glass-card p-6 rounded-[2rem]">
+        <div class="w-11 h-11 rounded-2xl bg-[#0071E3]/10 dark:bg-[#0071E3]/20 text-[#0071E3] dark:text-[#38BDF8] flex items-center justify-center text-lg mb-4">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <h3 class="text-base font-bold text-[#1D1D1F] dark:text-white mb-1.5">طب العناية المركزة والقلب</h3>
+        <p class="text-xs sm:text-sm text-[#86868B] dark:text-[#A1A1A6] leading-relaxed">
+          خبرة متقدمة في متابعة الحالات الحرجة بوحدات العناية المركزة وتدبير اعتلالات القلب والأوعية الدموية بدقة.
+        </p>
+      </div>
+    </div>
+
+    <div class="apple-glass p-7 sm:p-9 rounded-[2.5rem] mb-8 border border-white/80 dark:border-white/10">
+      <div class="max-w-2xl mx-auto text-center">
+        <i class="fa-solid fa-quote-right text-[#0071E3]/40 dark:text-[#38BDF8]/40 text-3xl mb-3 block"></i>
+        <p class="text-lg sm:text-xl font-bold text-[#1D1D1F] dark:text-white leading-relaxed mb-4">
+          «وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا»
+        </p>
+        <p class="text-xs sm:text-sm text-[#555] dark:text-gray-300 leading-relaxed mb-6 font-medium">
+          نظراً للظروف الصعبة التي يمر بها إخواني وأهلي من أبناء أمتنا العربية والإسلامية، وإيماناً بقدسية هذه الرسالة الطبية، قررتُ أن أكون عوناً وسنداً للغني والفقير على حدٍ سواء، ابتغاء لمرضاة الله تعالى وإحساناً في تقديم الرعاية السريرية.
+        </p>
+        <div class="h-px w-24 bg-gradient-to-r from-transparent via-black/10 dark:via-white/15 to-transparent mx-auto mb-6"></div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-[#86868B] dark:text-[#A1A1A6] mb-5">
+          مبادئ الممارسة الطبية والخدمة
+        </h4>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+        <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10">
+          <span class="w-7 h-7 rounded-xl bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center text-xs font-bold shrink-0">١</span>
+          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F] dark:text-gray-200 pt-0.5">المحافظة على صحة المرضى وسلامتهم كأولوية قصوى.</span>
+        </div>
+        <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10">
+          <span class="w-7 h-7 rounded-xl bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center text-xs font-bold shrink-0">٢</span>
+          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F] dark:text-gray-200 pt-0.5">تقديم الرعاية الأولية المتقنة والمبكرة.</span>
+        </div>
+        <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10">
+          <span class="w-7 h-7 rounded-xl bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center text-xs font-bold shrink-0">٣</span>
+          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F] dark:text-gray-200 pt-0.5">تشخيص وتقييم ومتابعة الحالات المرضية باستمرار.</span>
+        </div>
+        <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10">
+          <span class="w-7 h-7 rounded-xl bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center text-xs font-bold shrink-0">٤</span>
+          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F] dark:text-gray-200 pt-0.5">تقييم الاحتياجات العلاجية وفق البروتوكولات الطبية العالمية المعتمدة.</span>
+        </div>
+        <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10">
+          <span class="w-7 h-7 rounded-xl bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center text-xs font-bold shrink-0">٥</span>
+          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F] dark:text-gray-200 pt-0.5">تقديم الخدمة الطبية بكل أمانة وإخلاص للمرضى.</span>
+        </div>
+        <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10">
+          <span class="w-7 h-7 rounded-xl bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center text-xs font-bold shrink-0">٦</span>
+          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F] dark:text-gray-200 pt-0.5">إعطاء تقرير كامل ومفصل للمريض عن حالته وطبيعة مرضه.</span>
+        </div>
+        <div class="sm:col-span-2 flex items-start gap-3 p-3.5 rounded-2xl bg-sky-50/80 dark:bg-sky-950/40 border border-sky-100 dark:border-sky-900/50">
+          <span class="w-7 h-7 rounded-xl bg-[#0284C7] dark:bg-[#0284C7] text-white flex items-center justify-center text-xs font-bold shrink-0">٧</span>
+          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F] dark:text-gray-200 pt-0.5">تقييم وتشخيص وتوجيه المرضى نحو التخصص الطبي الدقيق والمناسب منعاً لتخبط المريض بين العيادات.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center pt-2">
+      <button onclick="goToBooking()" class="apple-btn-primary hover:opacity-95 text-white font-bold text-sm sm:text-base py-3.5 px-8 rounded-full transition-all transform active:scale-95 inline-flex items-center gap-2 cursor-pointer shadow-lg">
+        <i class="fa-solid fa-calendar-plus"></i>
+        <span>طلب استشارة طبية مع د. جلال</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- بطاقة الاتصال المباشر -->
+  <section class="max-w-2xl mx-auto px-4 pb-12 relative z-10">
+    <div class="apple-glass p-5 rounded-[2rem] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-right">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-black/5 dark:bg-white/10 text-[#1D1D1F] dark:text-white flex items-center justify-center text-sm">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm text-[#1D1D1F] dark:text-white">الاتصال الهاتفي المباشر</h4>
+          <p class="text-[11px] text-[#86868B] dark:text-[#A1A1A6]">متاح للاستفسارات والحالات العاجلة</p>
+        </div>
+      </div>
+      <a href="tel:+967783817001" dir="ltr" class="apple-glass-card hover:bg-white dark:hover:bg-white/20 text-xs font-mono font-bold text-[#0071E3] dark:text-[#38BDF8] py-2 px-4 rounded-full transition shadow-sm">
+        +967 783 817 001
+      </a>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer class="max-w-3xl mx-auto px-4 pb-28 text-center text-xs text-[#86868B] dark:text-[#A1A1A6] relative z-10">
+    <div class="apple-glass-card p-4 rounded-2xl mb-6">
+      <p class="leading-relaxed text-[11px] text-[#555] dark:text-gray-300">
+        <i class="fa-solid fa-circle-info text-[#0071E3] dark:text-[#38BDF8] ml-1"></i>
+        <strong>إخلاء مسؤولية:</strong> الاستشارات الطبية عبر الموقع تقدم خدمات عيادات استشارية ولا تغني عن التوجه الى اقسام الطواري للحالات الحرجة مثل فقدان الوعي والم الصدر الشديد وضيق التنفس الحاد.
+      </p>
+    </div>
+    
+    <p class="font-medium text-[11px]">© جميع الحقوق محفوظة — عيادة الدكتور جلال حسان</p>
+  </footer>
+
+  <!-- زر واتساب العائم -->
+  <a href="https://wa.me/967783817001?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D8%AC%D9%84%D8%A7%D9%84%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D8%B7%D8%A8%D9%8A%D8%A9" target="_blank" 
+     aria-label="محادثة واتساب عيادة الدكتور جلال"
+     class="fixed bottom-6 left-6 z-40 w-13 h-13 p-3.5 rounded-full bg-[#34C759] text-white flex items-center justify-center shadow-lg shadow-black/15 hover:scale-105 active:scale-95 transition-all duration-200">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- المنطق البرمجي -->
+  <script>
+    const DOCTOR_PHONE = "967783817001";
+
+    // إدارة المظهر (Dark / Light Mode)
+    function updateThemeIcon() {
+      const isDark = document.documentElement.classList.contains('dark');
+      const icon = document.getElementById('themeIcon');
+      if (icon) {
+        icon.className = isDark ? 'fa-solid fa-sun text-sm text-yellow-400' : 'fa-solid fa-moon text-sm text-[#1D1D1F]';
+      }
+    }
+
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      updateThemeIcon();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      updateThemeIcon();
+    });
+
+    // التبديل بين التبويبات
+    function switchTab(tab) {
+      const homeView = document.getElementById('homeView');
+      const resumeView = document.getElementById('resumeView');
+      const btnHome = document.getElementById('tabBtnHome');
+      const btnResume = document.getElementById('tabBtnResume');
+
+      if (tab === 'home') {
+        homeView.classList.remove('hidden');
+        resumeView.classList.add('hidden');
+        btnHome.classList.add('tab-active');
+        btnHome.classList.remove('text-[#1D1D1F]', 'dark:text-gray-300');
+        btnResume.classList.remove('tab-active');
+        btnResume.classList.add('text-[#1D1D1F]', 'dark:text-gray-300');
+      } else {
+        homeView.classList.add('hidden');
+        resumeView.classList.remove('hidden');
+        btnResume.classList.add('tab-active');
+        btnResume.classList.remove('text-[#1D1D1F]', 'dark:text-gray-300');
+        btnHome.classList.remove('tab-active');
+        btnHome.classList.add('text-[#1D1D1F]', 'dark:text-gray-300');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function goToBooking() {
+      switchTab('home');
+      setTimeout(() => {
+        const bookingElem = document.getElementById('booking');
+        if (bookingElem) bookingElem.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+
+    // القائمة المنسدلة للخدمات
+    function toggleDropdown() {
+      document.getElementById('inlineDropdown').classList.toggle('hidden');
+      document.getElementById('dropdownArrow').classList.toggle('rotate-180');
+    }
+
+    function selectService(serviceName) {
+      document.getElementById('serviceType').value = serviceName;
+      const label = document.getElementById('selectedServiceText');
+      label.textContent = serviceName;
+      label.classList.remove('text-[#86868B]/50', 'dark:text-gray-400', 'font-normal');
+      label.classList.add('text-[#1D1D1F]', 'dark:text-white', 'font-semibold');
+
+      document.querySelectorAll('.service-item').forEach(item => {
+        const text = item.querySelector('span').textContent.trim();
+        const check = item.querySelector('.check-icon');
+        if (text === serviceName) {
+          item.classList.add('bg-black/[0.04]', 'dark:bg-white/10', 'font-bold');
+          check.classList.remove('hidden');
+        } else {
+          item.classList.remove('bg-black/[0.04]', 'dark:bg-white/10', 'font-bold');
+          check.classList.add('hidden');
+        }
+      });
+      toggleDropdown();
+    }
+
+    // إرسال البيانات إلى واتساب الطبيب مباشرة
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+      const service = document.getElementById('serviceType').value;
+      if (!service) {
+        alert("يرجى اختيار نوع الاستشارة المطلوبة أولاً.");
+        toggleDropdown();
+        return;
+      }
+
+      const name = document.getElementById('patientName').value.trim();
+      const age = document.getElementById('patientAge').value.trim();
+      const gender = document.getElementById('patientGender').value;
+      const notes = document.getElementById('patientNotes').value.trim();
+
+      const formattedMessage = 
+`*طلب استشارة طبية (عيادة د. جلال حسان)*
+
+👤 *الاسم:* ${name}
+🎂 *العمر:* ${age} سنة
+🚻 *الجنس:* ${gender}
+🩺 *الخدمة:* ${service}
+
+📝 *تفاصيل الحالة:*
+${notes}`;
+
+      window.open(`https://wa.me/${DOCTOR_PHONE}?text=${encodeURIComponent(formattedMessage)}`, '_blank');
+    }
+  </script>
+</body>
+</html>
